@@ -1,13 +1,21 @@
-import Navbar from "./Components/pages/home"
+// src/App.tsx
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Layout from '../src/Components/pages/layout';
+import MainPage from './Components/pages/main_page';
+import Contact from './Components/pages/contact';
+import Services from './Components/pages/services'
+
 
 function App() {
-
   return (
-    <>
-    <Navbar />
-    {/* <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, quisquam.</h1> */}
-    </>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout><MainPage /></Layout>} />
+        <Route path="/contact" element={<Layout><Contact /></Layout>} />
+        <Route path="/services" element={<Layout><Services /></Layout>} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

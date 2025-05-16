@@ -1,9 +1,22 @@
-import '../styles/home.css'
+// src/components/Navbar.tsx
+import '../styles/home.css'; // Agar stillaringiz bo'lsa
 
 function Navbar() {
   return (
-    <h1>Lorem, ipsum dolor.</h1>
+    <nav>
+      <ul>
+        <li>
+          Home
+        </li>
+        <li>
+          Home
+        </li>
+        <li>
+          Home
+        </li>
+      </ul>
+    </nav>
   );
 }
 
-export default Navbar
+export default Navbar;
