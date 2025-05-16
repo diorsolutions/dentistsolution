@@ -7,6 +7,10 @@ footer {
   font-size: 0.9em;
 }
 
+feDropShadow {
+    display: subgrid;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
