@@ -2,7 +2,9 @@
 function MainPage() {
 
   return (
-    <div>MainPage</div>
+    <>
+      <h2>Main home page</h2>
+    </>
   )
   
 }
