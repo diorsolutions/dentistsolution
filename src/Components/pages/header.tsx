@@ -1,10 +1,9 @@
 // src/components/Header.tsx
-import '../styles/header.css'; // Agar stillaringiz bo'lsa
-
+import '/projects/dentist/src/Components/styles/header.css';
 function Header() {
   return (
     <header>
-      <div className="logo">Sizning Loyiha Nomingiz</div>
+      {/* <h3>Logo</h3> */}
     </header>
   );
 }

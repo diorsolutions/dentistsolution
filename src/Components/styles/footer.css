@@ -1,0 +1,14 @@
+/* src/components/Footer.css */
+footer {
+  background-color: #e5f6f8; /* Header fon rangiga o'xshash */
+  color: #333333; /* Header matn rangiga o'xshash */
+  padding: 1em 0;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}

@@ -1,0 +1,24 @@
+
+
+body {
+    font-family: sans-serif; /* Default shrift oilasi */
+    color: #333; /* Default matn rangi (to'q kulrang) */
+    background-color: #f5fbfc ; /* Default fon rangi (och kulrang) */
+    margin: 0; /* Brauzerning default marginlarini olib tashlash */
+    padding: 0; /* Brauzerning default paddinglarini olib tashlash */
+    box-sizing: border-box; /* Elementlarning padding va borderlari kenglikka kiritilishini ta'minlash */
+  }
+  html {
+    font-size: 16px; /* Asosiy shrift hajmi */
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: #222; /* Default sarlavha rangi */
+    margin-bottom: 1em;
+    font-weight: bold;
+  }
+  .block_bg {
+    background-color: #e5f6f8;
+  }
+  .p03 {
+    padding: 0 30px;
+  }
