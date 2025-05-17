@@ -1,1 +1,66 @@
 /* navbar stylela */
+
+.logo {
+    mix-blend-mode: multiply !important;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    .navbar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .navbar_actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+
+        a {
+            position: relative;
+
+            &::after {
+                content: "";
+                width: 0%;
+                height: 2px;
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+                background-color: #333;
+                border-radius: 6px;
+                transition: width 0.3s ease-in-out;
+            }
+
+            &:hover::after {
+                width: 100%;
+            }
+        }
+    }
+
+    select {
+        padding: 5px 10px;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: 6px;
+        box-shadow: 0 0 2px 0 hsl(185, 12%, 64%);
+        outline: none;
+    }
+
+
+}

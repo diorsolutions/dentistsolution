@@ -1,7 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import './style.css'
 import { Link } from 'react-router-dom';
-
 function Navbar() {
   const { t, i18n } = useTranslation();
   const lang = localStorage.getItem('lang') || 'uz';
@@ -16,18 +15,17 @@ function Navbar() {
     const selectedLang = event.target.value;
     changeLanguage(selectedLang);
   };
-
+  
   return (
     <nav>
-      <div className='container'>
-        <Link to={'/'}>Logo</Link>
-        <div>
+      <div className='container navbar'>
+        <Link to={'/'} className='logo'>Logo</Link>
+        <div className='navbar_actions'>
           <ul>
-            <li><Link to={'/home'}>{t('navbar.home')}</Link></li>
+            <li><Link to={'/'}>{t('navbar.home')}</Link></li>
             <li><Link to={'/services'}>{t('navbar.services')}</Link></li>
             <li><Link to={'/contact'}>{t('navbar.contact')}</Link></li>
           </ul>
-          <p>{t('test')}</p>
           <select name="lang" id="lang" value={lang} onChange={handleLanguageChange}>
             <option value="uz">O'zbekcha</option>
             <option value="ru">Русский</option>

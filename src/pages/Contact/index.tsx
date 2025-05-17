@@ -1,9 +1,12 @@
+
 import './style.css'
 
 function Contact() {
 
   return (
-    <h1>Contact</h1>
+    <div className="container">
+      <h2>Contact</h2>
+    </div>
   )
   
 }
