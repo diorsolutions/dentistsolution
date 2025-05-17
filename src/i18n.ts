@@ -12,25 +12,38 @@ i18n
           navbar: {
             home: 'Bosh sahifa',
             about: 'Biz haqimizda',
-            contact: 'Bog\'lanish',
+            contact: "Bog'lanish",
             services: 'Xizmatlar',
           },
-          test:'uzbekcha'
+          footer: {
+            copyright: "{{year}} yil. Barcha huquqlar himoyalangan",
+          }
         }
       },
       ru: {
         translation: {
-          welcome: "Добро пожаловать!",
-          login: "Войти",
-          test:'ruscha'
-
+          navbar: {
+            home: 'Главная',
+            about: 'О нас',
+            contact: 'Контакты',
+            services: 'Услуги',
+          },
+          footer: {
+            copyright: "{{year}} год. Все права защищены",
+          }
         }
       },
       en: {
         translation: {
-          welcome: "Welcome!",
-          login: "Login",
-          test:'inglizcha'
+          navbar: {
+            home: 'Home',
+            about: 'About Us',
+            contact: 'Contact',
+            services: 'Services',
+          },
+          footer: {
+            copyright: "{{year}} year. All rights reserved",
+          }
         }
       }
     },
