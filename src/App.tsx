@@ -1,20 +1,25 @@
-// src/App.tsx
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Layout from './Components/pages/layout';
-import MainPage from './Components/pages/main_home_page';
-import Contact from './Components/pages/contact';
-import Services from './Components/pages/services';
-import '../src/Components/styles/index.css';
+import './App.css'
+import Navbar from './modules/Navbar';
+import Home from './pages/Home';
+import Services from './pages/Services';
+import Contact from './pages/Contact';
+import Footer from './modules/Footer';
 
+
+// til
+import './i18n'
 
 function App() {
   return (
     <BrowserRouter>
+    <Navbar/>
       <Routes>
-        <Route path="/" element={<Layout><MainPage /></Layout>} />
-        <Route path="/contact" element={<Layout><Contact /></Layout>} />
-        <Route path="/services" element={<Layout><Services /></Layout>} />
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/services" element={<Services />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

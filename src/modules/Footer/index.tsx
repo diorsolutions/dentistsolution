@@ -1,5 +1,4 @@
-// src/components/Footer.tsx
-import '..//styles/footer.css'; // Agar stillaringiz bo'lsa
+import './style.css'
 
 function Footer() {
   return (

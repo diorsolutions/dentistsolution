@@ -1,7 +1,8 @@
+import './style.css'
 
 function Services() {
   return (
-    <h1>Services</h1>
+    <div>Services</div>
   )
 }
 
