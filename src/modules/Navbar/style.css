@@ -1,11 +1,21 @@
 /* navbar stylela */
 
 .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8px;
+    user-select: none;
     mix-blend-mode: multiply !important;
     font-size: 30px;
     font-weight: 900;
 }
-
+.logoPNG {
+    width: 70px;
+}
+.blue {
+    color: #5BA3BB;
+}
 nav {
     position: sticky;
     top: 0;
